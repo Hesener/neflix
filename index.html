@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neflix</title>
+    <link rel="stylesheet" href="./styles/main.css"
+    <link rel="stylesheet" href="./styles/header.css"
+</head>
+<body>
+    <div class="nav" id="nav">
+        <img src="assets/images/netflix-logo.png" alt="logo" class="nav__logo">
+        <img src="assets/images/netflix-avatar.png" alt="avatar" class="nav__avatar">
+    </div>
+    <!-- header -->
+    <div class="banner">
+        <div class="banner__contents">
+            <h1 class="banner__title">종이의 집</h1>
+            <div class="banner__buttons">
+                <button class="banner__button">재생</button>
+                <button class="banner__button">내 플레이리스트에 추가</button>
+            </div>
+            <div class="banner__description">
+                1명의 천재, 8명의 공범, 철저히 준비한 세기의 강도. 스페인 조폐국에서 인질극까지 벌인 이들은 과연 포위 경찰을 따돌리고 거액의 돈과 함께 달아날 수 있을까?
+            </div>
+        </div>
+        <div class="banner--fade-bottom"></div>
+    </div>
+
+    <!-- Liked Contens -->
+    <div class="row">
+        <h2>내가 찜한 콘텐츠</h2>
+        <div class="row__posters">
+            <img src="./assets/images/large-movie1.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie2.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie3.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie4.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie5.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie6.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie7.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie8.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie9.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie10.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie11.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="./assets/images/large-movie12.jpg" alt="" class="row__poster row__posterLarge">
+        </div>
+    </div>
+
+    <!-- Popular Contents -->
+    <div class="row">
+        <h2>넷플릭스 인기 콘텐츠</h2>
+        <div class="row__postersLarge">
+            <img src="./assets/images/small-movie1.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie2.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie3.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie4.jpg" alt="" class="row__poster ">
+            <img src="./assets/images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie6.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie7.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+
+    <!-- Trending Contents -->
+    <div class="row">
+        <h2>지금 뜨는 콘텐츠</h2>
+        <div class="row__posters">
+            <img src="./assets/images/small-movie8.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie9.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie10.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie11.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie12.jpg" alt="" class="row__poster ">
+            <img src="./assets/images/small-movie13.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie1.jpg" alt="" class="row__poster">
+            <img src="./assets/images/small-movie2.jpg" alt="" class="row__poster">
+
+        </div>
+    </div>
+
+    <script>
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= 100) {
+                nav.classList.add('nav__black');
+            } else {
+                nav.classList.remove('nav_black')
+            }
+        })
+    </script>
+    
+</body>
+</html>
